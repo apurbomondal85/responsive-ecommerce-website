@@ -1,0 +1,58 @@
+@media (max-width: 1199px) {
+    .offer-text .offer-title{
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        margin-bottom: .3rem;
+        line-height: 1;
+    }
+}
+@media (max-width: 992px) { 
+    .navbar-collapse{
+        margin-left: 50%;
+    }
+    .offer-text{
+        width: 100%;
+    }
+    .offer-text .offer-title{
+        font-size: 2.5rem;
+        margin: 0;
+    }
+    .product-text .p-name{
+        font-size: 1.1rem;
+    }
+    .inner-img{
+        width: 80%;
+    }
+    
+ }
+ @media (max-width: 768px) { 
+    
+    #home .inner-text .home-title{
+        font-size: 3rem;
+        color: var(--text-white);
+        text-transform: capitalize;
+    }
+    #home .inner-text .home-sub{
+        font-size: 1.2rem;
+    }
+  }
+  @media (max-width: 576px) { 
+    #home .inner-text{
+        text-align: center;
+    }
+    #home .carousel-inner .inner-text{
+        top: 50%;
+        left: 15%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+    .carousel-control-prev,.carousel-control-next{
+        display: none;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .summer-title{
+        font-size: 1.5rem;
+    }
+   }

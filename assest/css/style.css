@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --text-danger: #2bf702;
+    --text-white: #ffffff;
+    --text-black: #000000;
+    --text-light:#bdc3c7;
+    --text-red: red;
+    --text-yellow: #d2ba00;
+
+    --bg-white: #ffffff;
+}
+body{
+    font-size: 1rem;
+}
+.btn-danger{
+    border: none;
+    padding: .5rem 1rem;
+    color: var(--text-white);
+    background: var(--text-danger);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.btn-danger:hover{
+    color: var(--text-danger);
+    background: var(--bg-white);
+}
+a{
+    text-decoration: none;
+}
+
+/* header-section */
+header .fixed-top{
+    box-shadow: 0 0.125rem 0.625rem rgba(0,0,0,0.2);
+}
+.navbar .nav-link{
+    color: var(--text-black);
+}
+.navbar .nav-link:hover, .navbar .active{
+    color: var(--text-danger);
+}
+.navbar .navbar-toggler{
+    box-shadow: none;
+}
+
+/* ====home-section==== */
+#home .carousel-item{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 90%;
+    height: 650px;
+}
+#home .carousel-inner1{
+    background-image: url("../images/home-img1.png");
+}
+#home .carousel-inner2{
+    background-image: url("../images/home-img2.png");
+}
+#home .carousel-inner .inner-text{
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+}
+#home .inner-text .home-title{
+    font-size: 4.5rem;
+    color: var(--text-white);
+    text-transform: capitalize;
+}
+#home .inner-text .home-sub{
+    font-size: 1.5rem;
+    color: var(--text-light);
+}
+
+/* ====offer-section==== */
+.offer-section{
+    padding-top: 8rem;
+}
+.offer-inner{
+    width: 100%;
+    height: 100%;
+
+}
+.offer-img .img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.offer-text{
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.offer-text .offer-title{
+    color: var(--text-white);
+    font-size: 3rem;
+}
+.offer-text .offer-sub{
+    color: var(--text-white);
+    font-size: 1rem;
+}
+.offer-inner .offer-img::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -100%;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(to right, rgba(0,0,0,0),rgba(255, 255, 255, 0.3));
+    background: linear-gradient(to right, rgba(0,0,0,0),rgba(255, 255, 255, 0.3));
+    z-index: 3;
+    transform: skewX(-25deg);
+}
+.offer-section .image-g:hover .offer-img::before{
+    animation: offer_shine 1s;
+}
+@keyframes offer_shine {
+    100%{
+        left: 150%;
+    }
+}
+.offer-inner .offer-overlay::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+}
+.btn-white{
+    background: transparent;
+    border: 1px solid var(--text-danger);
+    color: var(--text-danger);
+}
+.btn-white:hover{
+    background: var(--text-danger);
+    color: var(--text-white);
+}
+
+/* ====products-section==== */
+.products-section{
+    padding-top: 7rem;
+}
+.title{
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    color: var(--text-black);
+    font-weight: 600;
+}
+.products-section .product-item{
+    padding: 1rem;
+    border-radius: .8rem;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2),
+                -3px -3px 10px rgba(0,0,0,0.2);
+}
+.title::before{
+    content: "";
+    width: 5rem;
+    height: .2rem;
+    background-color: var(--text-danger);
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.first-img{
+    transition: all .2s ease-in-out;
+}
+.second-img{
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+.products-section .product-img:hover .second-img{
+    opacity: 1;
+}
+.products-section .product-img:hover .first-img{
+    opacity: 0;
+}
+.sale{
+    padding: .3rem .9rem;
+    font-size: 1.1rem;
+    background: var(--text-red);
+    color: var(--text-white);
+    border-radius: .4rem;
+    font-weight: 500;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+.product-text .p-name{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: .5rem 0;
+    transition: all .3s ease-in-out;
+}
+.product-text .p-name:hover{
+    color: var(--text-red);
+}
+.product-text .price{
+    color: var(--text-black);
+    font-weight: 600;
+}
+.product-text .price del{
+    color: var(--text-light);
+}
+.product-text .star-g{
+    color: var(--text-light);
+    margin: .5rem 0;
+}
+.product-text .star-g .active{
+    color: var(--text-yellow);
+}
+.card-btn{
+    border: 1px solid var(--text-red);
+    background: transparent;
+    padding: .6rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: .4rem;
+    transition: all .3s ease-in-out;
+}
+.card-btn:hover{
+    background: var(--text-red);
+    color: var(--text-white);
+    border: 1px solid transparent;
+}
+
+/* ====banner==== */
+.banner{
+    padding-top: 7rem;
+}
+.banner-inner .banner-img{
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease-in-out;
+}
+.banner-inner{
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.banner-inner::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.banner-inner:hover .banner-img{
+    transform: scale(1.05);
+}
+.banner-inner .banner-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--text-white);
+    font-size: 2rem;
+    z-index: 1;
+}
+
+/* ====summer-section==== */
+.summer-section{
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+.summer-title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.summer-section .summer-text .price{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.summer-section .summer-text .price del{
+    font-size: .8rem;
+    color: var(--text-light);
+    font-weight: 600;
+}
+.inner-img{
+    width: 80%;
+    padding: 2rem;
+    background: var(--text-light);
+    border-radius: .5rem;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3),
+                -3px -3px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+.inner-img img{
+    width: 40%;
+}
+.s-sale{
+    left: 20%;
+}
+.counter li{
+    padding: 1rem 1.3rem;
+    background: var(--text-light);
+    text-align: center;
+    font-weight: 700;
+    font-size: .8rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3),
+    -3px -3px 10px rgba(0,0,0,0.3);;
+}
+.counter li .fs-1{
+    margin-bottom: -.7rem;
+}
