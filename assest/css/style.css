@@ -280,7 +280,6 @@ header .fixed-top{
 /* ====summer-section==== */
 .summer-section{
     padding-top: 8rem;
-    padding-bottom: 5rem;
 }
 .summer-title{
     font-size: 2rem;
@@ -323,4 +322,46 @@ header .fixed-top{
 }
 .counter li .fs-1{
     margin-bottom: -.7rem;
+}
+
+/* testimonial-section */
+.testimonial-section{
+    padding-top: 8rem;
+}
+.testimonial-section .carousel-item{
+    box-shadow: 0 0 0.55rem 0 rgba(0, 0, 0, 0.356);
+    padding: 1rem 8rem;
+}
+.testimonial-section .carousel-indicators [data-bs-target]{
+    background-color: red;
+    width: 2.5rem;
+    height: .2rem;
+}
+.testimonial-section .carousel-control-next-icon,
+.testimonial-section .carousel-control-prev-icon{
+    background: transparent;
+}
+.testimonial-section .slider-icon{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-red);
+}
+.testimonial-section .carousel-indicators{
+    bottom: -1.5rem;
+}
+
+.testimonial-section .carousel-inner .testi-img{
+    border-radius: 50%;
+}
+.testimonial-section .carousel-inner .testi-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.testimonial-section .carousel-inner .company{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #606060;
+}
+.testimonial-section .carousel-inner .testi-sub{
+    line-height: 2;
 }
