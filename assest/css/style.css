@@ -327,6 +327,7 @@ header .fixed-top{
 /* testimonial-section */
 .testimonial-section{
     padding-top: 8rem;
+    padding-bottom: 2rem;
 }
 .testimonial-section .carousel-item{
     box-shadow: 0 0 0.55rem 0 rgba(0, 0, 0, 0.356);
@@ -364,4 +365,43 @@ header .fixed-top{
 }
 .testimonial-section .carousel-inner .testi-sub{
     line-height: 2;
+}
+
+
+/* contact-section */
+.contact-section{
+    padding-top: 7rem;
+    background-color: #606060;
+}
+.contact-info .info{
+    color: var(--text-white);
+}
+.contact-info .location li{
+    color: var(--text-white);
+    line-height: 2;
+}
+.contact-info .location li i{
+    color: var(--text-yellow);
+    margin-right: .4rem;
+}
+.form-section form input{
+    width: 38.5%;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: .8rem 1.5rem;
+}
+.form-section form textarea{
+    width: 80%;
+    height: 10rem;
+    resize: none;
+    outline: none;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.form-section .btn-danger i{
+    margin-right: .3rem;
 }

@@ -41,6 +41,17 @@
     .testimonial-section .carousel-item{
         padding: 0;
     }
+    .testimonial-section .carousel-inner .testi-sub{
+        line-height: 1.5;
+    }
+    .form-section form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-section form input{
+        width: 80%;
+    }
   }
   @media (max-width: 576px) { 
     #home .inner-text{
