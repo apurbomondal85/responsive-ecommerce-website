@@ -250,7 +250,7 @@ header .fixed-top{
     transition: all .3s ease-in-out;
 }
 .banner-inner{
-    height: 300px;
+    max-height: 250px;
     overflow: hidden;
     cursor: pointer;
 }
@@ -371,6 +371,7 @@ header .fixed-top{
 /* contact-section */
 .contact-section{
     padding-top: 7rem;
+    padding-bottom: 2rem;
     background-color: #606060;
 }
 .contact-info .info{
@@ -404,4 +405,18 @@ header .fixed-top{
 }
 .form-section .btn-danger i{
     margin-right: .3rem;
+}
+
+
+/* footer-section */
+.footer-section{
+    background-color: var(--text-black);
+    padding: 3rem 0 ;
+}
+.footer-section .copyright, .footer-section .des-by{
+    font-size: 1.1rem;
+    color: var(--text-white);
+}
+.footer-section .copyright a, .footer-section .des-by a{
+    color: var(--text-red);
 }

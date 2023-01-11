@@ -20,8 +20,17 @@
     .product-text .p-name{
         font-size: 1.1rem;
     }
+    .banner-inner .banner-title{
+        font-size: 1.5rem;
+    }
     .inner-img{
         width: 80%;
+    }
+    .form-section form input{
+        width: 100%;
+    }
+    .form-section form textarea{
+        width: 100%;
     }
     
  }
@@ -33,6 +42,9 @@
         text-transform: capitalize;
     }
     #home .inner-text .home-sub{
+        font-size: 1.2rem;
+    }
+    .banner-inner .banner-title{
         font-size: 1.2rem;
     }
     .testimonial-section .slider-icon{
@@ -50,7 +62,7 @@
         align-items: center;
     }
     .form-section form input{
-        width: 80%;
+        width: 100%;
     }
   }
   @media (max-width: 576px) { 
@@ -63,6 +75,9 @@
         transform: translateY(-50%);
         text-align: center;
     }
+    .banner-inner .banner-title{
+        font-size: .9rem;
+    }
     .carousel-control-prev,.carousel-control-next{
         display: none;
     }
@@ -71,5 +86,8 @@
     }
     .summer-title{
         font-size: 1.5rem;
+    }
+    .footer-section .copyright, .footer-section .des-by{
+        font-size: .8rem;
     }
    }
